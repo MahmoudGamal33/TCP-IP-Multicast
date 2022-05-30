@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20220530-0913-Experimental"
+	Name="DESKTOP-Q1DASV1"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="DESKTOP-Q1DASV1"
+	OSRelease="4.4.0-19041-Microsoft"
+	OSVersion="#1237-Microsoft Sat Sep 11 14:32:00 PST 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="165"
+	ProcessorCacheSize="256"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="19923"
+	TotalPhysicalMemory="16177"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2592"
+	>
+	<Testing>
+		<StartDateTime>May 30 15:24 EET</StartDateTime>
+		<StartTestTime>1653917048</StartTestTime>
+		<TestList>
+			<Test>./RUNNING_TEST</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>RUNNING_TEST</Name>
+			<Path>.</Path>
+			<FullName>./RUNNING_TEST</FullName>
+			<FullCommandLine>/mnt/c/Users/Mahmoud/Desktop/DELL\ C++\ Task/Client/build/clientApp "239.255.0.1" "3001" "Failure"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.278319</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/mnt/c/Users/Mahmoud/Desktop/DELL\ C++\ Task/Client/build/clientApp "239.255.0.1" "3001" "Failure"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>Usage Minimum: clientAPP &lt;multicast_address&gt; &lt;Port&gt; 
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 30 15:24 EET</EndDateTime>
+		<EndTestTime>1653917048</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

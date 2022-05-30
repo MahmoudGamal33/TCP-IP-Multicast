@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhelperHeader.a  CMakeFiles/helperHeader.dir/helper.cpp.o
+/usr/bin/ranlib libhelperHeader.a

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build",
+  "command": "/usr/bin/g++     -pthread -g   -o CMakeFiles/clientApp.dir/main.cpp.o -c \"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp\"",
+  "file": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp"
+}
+]

@@ -1,0 +1,19 @@
+Start testing: May 30 15:24 EET
+----------------------------------------------------------
+1/1 Testing: RUNNING_TEST
+1/1 Test: RUNNING_TEST
+Command: "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/clientApp" "239.255.0.1" "3001" "Failure"
+Directory: /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build
+"RUNNING_TEST" start time: May 30 15:24 EET
+Output:
+----------------------------------------------------------
+Usage Minimum: clientAPP <multicast_address> <Port> 
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Failed.
+"RUNNING_TEST" end time: May 30 15:24 EET
+"RUNNING_TEST" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 30 15:24 EET

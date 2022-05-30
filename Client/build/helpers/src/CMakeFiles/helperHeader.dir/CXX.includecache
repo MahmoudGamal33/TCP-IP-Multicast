@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../header/include/helper.hpp
+iostream
+-
+
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src/helper.cpp
+helper.hpp
+-
+
