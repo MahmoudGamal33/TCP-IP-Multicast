@@ -1,7 +1,12 @@
 [
 {
   "directory": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build",
-  "command": "/usr/bin/g++     -pthread -g   -o CMakeFiles/clientApp.dir/main.cpp.o -c \"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp\"",
+  "command": "/usr/bin/g++   -I\"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client\"   -pthread -g   -o CMakeFiles/clientApp.dir/main.cpp.o -c \"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp\"",
   "file": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp"
+},
+{
+  "directory": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src",
+  "command": "/usr/bin/g++   -I\"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client\"   -pthread -g   -o CMakeFiles/calculation_helper.dir/calculation_helper.cpp.o -c \"/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/calculation_helper.cpp\"",
+  "file": "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/calculation_helper.cpp"
 }
 ]

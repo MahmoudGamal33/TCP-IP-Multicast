@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../header/include/helper.hpp
+../Helpers/Inc/helper.hpp
 iostream
 -
 
-/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src/helper.cpp
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/helper.cpp
 helper.hpp
 -
 

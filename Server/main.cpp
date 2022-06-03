@@ -73,7 +73,8 @@ int main(int argc, char *argv[])
         std::cerr << "ERROR: Unable to set TTL (invalid address family).\n";
         exit(EXIT_FAILURE);
     }
-
+    // int64_t acc = 0;
+    // int64_t c = 0;
     while(true)
     {
         // Multicast the string to all who have joined the group
@@ -84,8 +85,12 @@ int main(int argc, char *argv[])
 
         sprintf(sendString, "%d", degreeC);
         sendStringLen = strlen(sendString);
+        // acc += degreeC;
+        // c++;
 
-        std::cout << "C: " << degreeC << "\n";
+        // std::cout << "*********************** " << std::endl;
+        // std::cout << "Accumulative Degrees: " << acc << std::endl;
+        // std::cout << "Average Degrees: " <<  acc / (double)c << std::endl;
 
         ssize_t numBytes = sendto(sock, sendString, sendStringLen, 0, multicastAddressInfo->ai_addr, multicastAddressInfo->ai_addrlen);
         if(-1 == numBytes)

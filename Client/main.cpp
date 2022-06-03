@@ -1,31 +1,9 @@
 // // Our Reciever (Client)
 
-#include <iostream>
-#include <thread>
-#include <chrono>
-#include <string.h>
+#include <Helpers/Inc/calculation_helper.hpp>
 
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <unistd.h>
-#include <arpa/inet.h>
-#include <netdb.h>
 
 #define SOCKET_SUCCESS (0)
-#define MAX_STRING_LENGTH (30)
-
-double calculateAverage(int64_t accumulative, int64_t counter)
-{
-    return accumulative / (double)counter;
-}
-
-void display(int64_t accumulative, int64_t counter)
-{
-    std::cout << "**************************\n";
-    std::cout << "Accumulative Degrees: " << accumulative << std::endl;
-    std::cout << "Average Degrees: " << calculateAverage(accumulative, counter) << std::endl;
-    std::cout << "**************************\n";
-}
 
 int main(int argc, char *argv[])
 {
@@ -117,31 +95,15 @@ int main(int argc, char *argv[])
     // Free address structure(s) allocated by getaddrinfo()
     freeaddrinfo(multicastAddr);
 
-    char recvString[MAX_STRING_LENGTH + 1] = {0}; // Buffer to receive into
+    // char recvString[MAX_STRING_LENGTH + 1] = {0}; // Buffer to receive into
     
     // Receive a single datagram from the server
 
-    int64_t connectionCounter = 0;
-    int64_t accumulativeDegrees = 0;
+    std::thread recvThread(&recvFromServer, sock);
+    std::thread displayThread(&display);
 
-    while(true)
-    {
-        int recvStringLen = recvfrom(sock, recvString, MAX_STRING_LENGTH, 0, NULL, 0);
-        if (recvStringLen < 0)
-        {
-            std::cerr << "ERROR: recvfrom() failed.\n";
-            exit(EXIT_FAILURE);
-        }
-
-        recvString[recvStringLen] = '\0'; // Terminate the received string
-
-        accumulativeDegrees += atoi(recvString);
- 
-        if(++connectionCounter % 5 == 0)
-        {
-            display(accumulativeDegrees, connectionCounter);
-        }
-    }
+    recvThread.join();
+    displayThread.join();
 
     close(sock);
 

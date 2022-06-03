@@ -56,6 +56,28 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
@@ -89,38 +111,16 @@ package/fast: package
 
 .PHONY : package/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src/CMakeFiles/progress.marks"
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 helpers/src/all
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/progress.marks"
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 helpers/src/clean
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/clean
 .PHONY : clean
 
 # The main clean target
@@ -130,12 +130,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 helpers/src/preinstall
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 helpers/src/preinstall
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -144,46 +144,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-helpers/src/CMakeFiles/helperHeader.dir/rule:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 helpers/src/CMakeFiles/helperHeader.dir/rule
-.PHONY : helpers/src/CMakeFiles/helperHeader.dir/rule
+Helpers/Src/CMakeFiles/calculation_helper.dir/rule:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/CMakeFiles/calculation_helper.dir/rule
+.PHONY : Helpers/Src/CMakeFiles/calculation_helper.dir/rule
 
 # Convenience name for target.
-helperHeader: helpers/src/CMakeFiles/helperHeader.dir/rule
+calculation_helper: Helpers/Src/CMakeFiles/calculation_helper.dir/rule
 
-.PHONY : helperHeader
+.PHONY : calculation_helper
 
 # fast build rule for target.
-helperHeader/fast:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f helpers/src/CMakeFiles/helperHeader.dir/build.make helpers/src/CMakeFiles/helperHeader.dir/build
-.PHONY : helperHeader/fast
+calculation_helper/fast:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/build
+.PHONY : calculation_helper/fast
 
-helper.o: helper.cpp.o
+calculation_helper.o: calculation_helper.cpp.o
 
-.PHONY : helper.o
+.PHONY : calculation_helper.o
 
 # target to build an object file
-helper.cpp.o:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f helpers/src/CMakeFiles/helperHeader.dir/build.make helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.o
-.PHONY : helper.cpp.o
+calculation_helper.cpp.o:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/calculation_helper.cpp.o
+.PHONY : calculation_helper.cpp.o
 
-helper.i: helper.cpp.i
+calculation_helper.i: calculation_helper.cpp.i
 
-.PHONY : helper.i
+.PHONY : calculation_helper.i
 
 # target to preprocess a source file
-helper.cpp.i:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f helpers/src/CMakeFiles/helperHeader.dir/build.make helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.i
-.PHONY : helper.cpp.i
+calculation_helper.cpp.i:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/calculation_helper.cpp.i
+.PHONY : calculation_helper.cpp.i
 
-helper.s: helper.cpp.s
+calculation_helper.s: calculation_helper.cpp.s
 
-.PHONY : helper.s
+.PHONY : calculation_helper.s
 
 # target to generate assembly for a file
-helper.cpp.s:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f helpers/src/CMakeFiles/helperHeader.dir/build.make helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.s
-.PHONY : helper.cpp.s
+calculation_helper.cpp.s:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/calculation_helper.cpp.s
+.PHONY : calculation_helper.cpp.s
 
 # Help Target
 help:
@@ -191,15 +191,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... package"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... helperHeader"
-	@echo "... helper.o"
-	@echo "... helper.i"
-	@echo "... helper.s"
+	@echo "... calculation_helper"
+	@echo "... calculation_helper.o"
+	@echo "... calculation_helper.i"
+	@echo "... calculation_helper.s"
 .PHONY : help
 
 

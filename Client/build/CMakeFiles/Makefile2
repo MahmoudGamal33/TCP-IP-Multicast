@@ -54,11 +54,12 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build"
 
 # The main recursive "all" target.
 all: CMakeFiles/clientApp.dir/all
+all: Helpers/Src/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Helpers/Src/preinstall
 
 .PHONY : preinstall
 
@@ -92,8 +93,27 @@ clean: CMakeFiles/NightlyConfigure.dir/clean
 clean: CMakeFiles/clientApp.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
+clean: Helpers/Src/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Helpers/Src
+
+# Recursive "all" directory target.
+Helpers/Src/all: Helpers/Src/CMakeFiles/calculation_helper.dir/all
+
+.PHONY : Helpers/Src/all
+
+# Recursive "preinstall" directory target.
+Helpers/Src/preinstall:
+
+.PHONY : Helpers/Src/preinstall
+
+# Recursive "clean" directory target.
+Helpers/Src/clean: Helpers/Src/CMakeFiles/calculation_helper.dir/clean
+
+.PHONY : Helpers/Src/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyMemCheck.dir
@@ -801,15 +821,15 @@ CMakeFiles/NightlyConfigure.dir/clean:
 # Target rules for target CMakeFiles/clientApp.dir
 
 # All Build rule for target.
-CMakeFiles/clientApp.dir/all:
+CMakeFiles/clientApp.dir/all: Helpers/Src/CMakeFiles/calculation_helper.dir/all
 	$(MAKE) -f CMakeFiles/clientApp.dir/build.make CMakeFiles/clientApp.dir/depend
 	$(MAKE) -f CMakeFiles/clientApp.dir/build.make CMakeFiles/clientApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=1,2 "Built target clientApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=3,4 "Built target clientApp"
 .PHONY : CMakeFiles/clientApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clientApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clientApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 0
 .PHONY : CMakeFiles/clientApp.dir/rule
@@ -877,6 +897,33 @@ ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/rule
 CMakeFiles/ContinuousSubmit.dir/clean:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/clean
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
+
+#=============================================================================
+# Target rules for target Helpers/Src/CMakeFiles/calculation_helper.dir
+
+# All Build rule for target.
+Helpers/Src/CMakeFiles/calculation_helper.dir/all:
+	$(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/depend
+	$(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=1,2 "Built target calculation_helper"
+.PHONY : Helpers/Src/CMakeFiles/calculation_helper.dir/all
+
+# Build rule for subdir invocation for target.
+Helpers/Src/CMakeFiles/calculation_helper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 Helpers/Src/CMakeFiles/calculation_helper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" 0
+.PHONY : Helpers/Src/CMakeFiles/calculation_helper.dir/rule
+
+# Convenience name for target.
+calculation_helper: Helpers/Src/CMakeFiles/calculation_helper.dir/rule
+
+.PHONY : calculation_helper
+
+# clean rule for target.
+Helpers/Src/CMakeFiles/calculation_helper.dir/clean:
+	$(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/clean
+.PHONY : Helpers/Src/CMakeFiles/calculation_helper.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

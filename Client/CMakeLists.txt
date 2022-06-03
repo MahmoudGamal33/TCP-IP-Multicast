@@ -15,3 +15,6 @@ set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} )
 set(CMAKE_CXX_FLAGS " -pthread") 
 
 include(CPack)
+
+add_subdirectory(Helpers/Src)
+target_link_libraries(${PROJECT_NAME} calculation_helper)

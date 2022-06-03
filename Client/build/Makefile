@@ -520,6 +520,19 @@ ContinuousSubmit/fast:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+#=============================================================================
+# Target rules for targets named calculation_helper
+
+# Build rule for target.
+calculation_helper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 calculation_helper
+.PHONY : calculation_helper
+
+# fast build rule for target.
+calculation_helper/fast:
+	$(MAKE) -f Helpers/Src/CMakeFiles/calculation_helper.dir/build.make Helpers/Src/CMakeFiles/calculation_helper.dir/build
+.PHONY : calculation_helper/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -587,6 +600,7 @@ help:
 	@echo "... clientApp"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
+	@echo "... calculation_helper"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src
+# Install script for directory: /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Helpers/Inc/calculation_helper.hpp
+iostream
+-
+thread
+-
+chrono
+-
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/calculation_helper.cpp
+Helpers/Inc/calculation_helper.hpp
+-
+mutex
+-
+

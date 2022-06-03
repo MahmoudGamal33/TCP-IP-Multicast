@@ -32,3 +32,9 @@
 /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles/clientApp.dir
 /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles/ContinuousTest.dir
 /mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles/ContinuousSubmit.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/test.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/package_source.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/package.dir
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/calculation_helper.dir

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/AverageCalculationTest.dir/tests.cpp.o  -o AverageCalculationTest  ../../Helpers/Src/libHelperHeader.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcalculation_helper.a  CMakeFiles/calculation_helper.dir/calculation_helper.cpp.o
+/usr/bin/ranlib libcalculation_helper.a

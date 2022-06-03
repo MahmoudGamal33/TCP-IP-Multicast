@@ -6,14 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp
+../Helpers/Inc/calculation_helper.hpp
 iostream
 -
 thread
 -
 chrono
--
-string.h
 -
 sys/socket.h
 -
@@ -24,5 +22,9 @@ unistd.h
 arpa/inet.h
 -
 netdb.h
+-
+
+/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/main.cpp
+Helpers/Inc/calculation_helper.hpp
 -
 

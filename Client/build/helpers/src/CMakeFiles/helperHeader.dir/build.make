@@ -49,51 +49,51 @@ CMAKE_SOURCE_DIR = "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client"
 CMAKE_BINARY_DIR = "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build"
 
 # Include any dependencies generated for this target.
-include helpers/src/CMakeFiles/helperHeader.dir/depend.make
+include Helpers/Src/CMakeFiles/HelperHeader.dir/depend.make
 
 # Include the progress variables for this target.
-include helpers/src/CMakeFiles/helperHeader.dir/progress.make
+include Helpers/Src/CMakeFiles/HelperHeader.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include helpers/src/CMakeFiles/helperHeader.dir/flags.make
+include Helpers/Src/CMakeFiles/HelperHeader.dir/flags.make
 
-helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.o: helpers/src/CMakeFiles/helperHeader.dir/flags.make
-helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.o: ../helpers/src/helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.o"
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helperHeader.dir/helper.cpp.o -c "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src/helper.cpp"
+Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.o: Helpers/Src/CMakeFiles/HelperHeader.dir/flags.make
+Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.o: ../Helpers/Src/helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.o"
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelperHeader.dir/helper.cpp.o -c "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/helper.cpp"
 
-helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helperHeader.dir/helper.cpp.i"
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src/helper.cpp" > CMakeFiles/helperHeader.dir/helper.cpp.i
+Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelperHeader.dir/helper.cpp.i"
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/helper.cpp" > CMakeFiles/HelperHeader.dir/helper.cpp.i
 
-helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helperHeader.dir/helper.cpp.s"
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src/helper.cpp" -o CMakeFiles/helperHeader.dir/helper.cpp.s
+Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelperHeader.dir/helper.cpp.s"
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src/helper.cpp" -o CMakeFiles/HelperHeader.dir/helper.cpp.s
 
-# Object files for target helperHeader
-helperHeader_OBJECTS = \
-"CMakeFiles/helperHeader.dir/helper.cpp.o"
+# Object files for target HelperHeader
+HelperHeader_OBJECTS = \
+"CMakeFiles/HelperHeader.dir/helper.cpp.o"
 
-# External object files for target helperHeader
-helperHeader_EXTERNAL_OBJECTS =
+# External object files for target HelperHeader
+HelperHeader_EXTERNAL_OBJECTS =
 
-helpers/src/libhelperHeader.a: helpers/src/CMakeFiles/helperHeader.dir/helper.cpp.o
-helpers/src/libhelperHeader.a: helpers/src/CMakeFiles/helperHeader.dir/build.make
-helpers/src/libhelperHeader.a: helpers/src/CMakeFiles/helperHeader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhelperHeader.a"
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && $(CMAKE_COMMAND) -P CMakeFiles/helperHeader.dir/cmake_clean_target.cmake
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helperHeader.dir/link.txt --verbose=$(VERBOSE)
+Helpers/Src/libHelperHeader.a: Helpers/Src/CMakeFiles/HelperHeader.dir/helper.cpp.o
+Helpers/Src/libHelperHeader.a: Helpers/Src/CMakeFiles/HelperHeader.dir/build.make
+Helpers/Src/libHelperHeader.a: Helpers/Src/CMakeFiles/HelperHeader.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libHelperHeader.a"
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && $(CMAKE_COMMAND) -P CMakeFiles/HelperHeader.dir/cmake_clean_target.cmake
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelperHeader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-helpers/src/CMakeFiles/helperHeader.dir/build: helpers/src/libhelperHeader.a
+Helpers/Src/CMakeFiles/HelperHeader.dir/build: Helpers/Src/libHelperHeader.a
 
-.PHONY : helpers/src/CMakeFiles/helperHeader.dir/build
+.PHONY : Helpers/Src/CMakeFiles/HelperHeader.dir/build
 
-helpers/src/CMakeFiles/helperHeader.dir/clean:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" && $(CMAKE_COMMAND) -P CMakeFiles/helperHeader.dir/cmake_clean.cmake
-.PHONY : helpers/src/CMakeFiles/helperHeader.dir/clean
+Helpers/Src/CMakeFiles/HelperHeader.dir/clean:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" && $(CMAKE_COMMAND) -P CMakeFiles/HelperHeader.dir/cmake_clean.cmake
+.PHONY : Helpers/Src/CMakeFiles/HelperHeader.dir/clean
 
-helpers/src/CMakeFiles/helperHeader.dir/depend:
-	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/helpers/src" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/helpers/src/CMakeFiles/helperHeader.dir/DependInfo.cmake" --color=$(COLOR)
-.PHONY : helpers/src/CMakeFiles/helperHeader.dir/depend
+Helpers/Src/CMakeFiles/HelperHeader.dir/depend:
+	cd "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/Helpers/Src" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src" "/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/Helpers/Src/CMakeFiles/HelperHeader.dir/DependInfo.cmake" --color=$(COLOR)
+.PHONY : Helpers/Src/CMakeFiles/HelperHeader.dir/depend
 

@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libhelperHeader.a"
+  "libHelperHeader.a"
 )

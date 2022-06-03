@@ -79,6 +79,7 @@ clientApp_EXTERNAL_OBJECTS =
 
 clientApp: CMakeFiles/clientApp.dir/main.cpp.o
 clientApp: CMakeFiles/clientApp.dir/build.make
+clientApp: Helpers/Src/libcalculation_helper.a
 clientApp: CMakeFiles/clientApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Mahmoud/Desktop/DELL C++ Task/Client/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable clientApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clientApp.dir/link.txt --verbose=$(VERBOSE)
